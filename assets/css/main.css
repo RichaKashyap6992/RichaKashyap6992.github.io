@@ -3641,6 +3641,7 @@ input, select, textarea {
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+		background-image: linear-gradient(45deg, black, transparent);
 	}
 
 		#nav ul.divided li {
@@ -3748,7 +3749,7 @@ input, select, textarea {
 					}
 
 				#nav ul.links li.active {
-					background-color: #ffffff;
+					background-color: #f0f8f5;
 					color: rgb(94, 153, 151);
 				}
 
@@ -3792,6 +3793,7 @@ input, select, textarea {
 			padding: 4rem 4rem 2rem 4rem ;
 			/* border-top: solid 2px #eeeeee; */
 			margin: 0;
+			background-color: #f0f8f5
 		}
 
 			#main > *:first-child {
@@ -4731,8 +4733,10 @@ input, select, textarea {
 		top: 0;
 		left: 0;
 		display: inline-block;
-		width: calc(100% - 365px);
-		margin-left: 365px;
+		/* width: calc(100% - 365px); */
+		/* margin-left: 365px; */
+		display: contents;
+	
 		
 	}
 
@@ -4759,29 +4763,40 @@ input, select, textarea {
 		border-radius: 50%;
 		width: 300px;
 		height: 300px;
-		display: inline-block;
-		margin: 30px;
+		/* display: inline-block; */
+		margin: 0px 30px 30px;
 		left: 0px;
 		top: 0px;
-		position: absolute;
+		/* position: absolute; */
+		/* float: left; */
+		float: right;
+		/* display: block; */
 	}
 	
-	#about .technologies-detail {
+	#about .card {
 		width: 300px;
 		height: 300px;
 		padding: 5px;
-		position: relative;
-		display: inline-flex;
+		display: inline-grid;
 		margin: 30px 10px;
-		box-shadow: 10px 10px 5px #aaaaaa;
-		background-color: rgb(215, 252, 250);
+		box-shadow: 4px 4px 5px #aaaaaa;
+		background-color: white;
+	}
+	
+	#about .card .card-header{
+		position: relative;
+	}
+
+	.card .card-header .card-header-text {
+		text-align: center;
+		margin-top: 35px;
 	}
 
 
-	#about .technologies-detail .technologies-detail-header {
+	#about .card .card-header-icon {
 		width: 60px;
 		height: 60px;
-		background-color: rgb(94, 153, 151);
+		background-image: radial-gradient(rgb(153, 190, 189), rgb(34, 100, 98));
 		padding: 16px;
 		text-align: center;
 		line-height: 30px;
@@ -4791,12 +4806,8 @@ input, select, textarea {
 		left: 50%;
 		top: -30px;
 		right: 50%;
-		box-shadow: 4px 5px 5px rgb(169, 215, 213);
+		/* box-shadow: 4px 5px 5px rgb(169, 215, 213); */
 	}
-	#about .technologies-detail .technologies-detail-description {
-		margin-top: 30px;
-	}
-	
 
 	.icon.white {
 		color: white
@@ -4804,6 +4815,23 @@ input, select, textarea {
 
 	.list-item-with-margin {
 		margin-left: 10px;
+	}
+
+	.download-cv-btn {
+		float: right;
+	}
+
+	.skills {
+		display: block;
+		margin-top: 300px;
+	}
+
+	li i.fa-check {
+		color: rgb(34, 100, 98);
+	}
+
+	ul.icons.social {
+		display: initial;
 	}
 
 
